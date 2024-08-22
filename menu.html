@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HellDash</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu">
+        <h2>choose lvl</h2>
+        <button onclick="redirectTo('easy')">Easy - Anime Level</button>
+        <button onclick="redirectTo('medium')">Medium - Sad Depression Level</button>
+        <button onclick="redirectTo('hard')">Hard - Pato Level</button>
+    </div>
+    <script>
+        function redirectTo(level) {
+            switch (level) {
+                case 'easy':
+                    window.location.href = 'easy/index.html';
+                    break;
+                case 'medium':
+                    window.location.href = 'medium/index.html'; 
+                    break;
+                case 'hard':
+                    window.location.href = 'hard/index.html'; 
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
