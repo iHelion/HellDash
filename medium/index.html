@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HellDash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        <button id="start-button">Start</button>
+        <div id="progress-bar-container">
+            <div id="progress-bar">
+                <div id="progress-bar-fill"></div>
+            </div>
+            <div id="progress-percentage">0%</div>
+        </div>
+        <div id="game-over" class="hidden">
+            <p id="game-over-message">Press 'R' to restart.</p>
+        </div>
+        <div id="you-won" class="hidden">
+            <p>noice! u not badd ;p</p>
+            <img id="sigma-gif" src="assets/sigma.gif" alt="sigma">
+        </div>
+    </div>
+    <script src="howler.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

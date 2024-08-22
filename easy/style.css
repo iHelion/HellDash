@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #61dafb;
+}
+
+#gameContainer {
+    text-align: center;
+    position: relative;
+}
+
+canvas {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #000;
+    background: linear-gradient(to bottom, #f9168f, #720856);
+}
+
+#start-button {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    background-color: #f9168f; 
+    border: none;
+    color: white; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#start-button:hover {
+    background-color: #720856; 
+}
+
+#progress-bar-container {
+    width: 600px; 
+    height: 10px; 
+    background-color: #444;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#progress-bar {
+    width: 100%;
+    height: 100%;
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+#progress-bar-fill {
+    width: 0;
+    height: 100%;
+    background-color: #f9168f;
+    transition: width 0.1s linear;
+}
+
+#progress-percentage {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -25px;
+    color: #fff;
+    font-size: 14px;
+}
+
+#game-over {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+    z-index: 1000;
+}
+
+#game-over-message {
+    color: #f9168f; 
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    margin: 0;
+    padding: 10px;
+    border: 2px solid #f9168f; 
+    border-radius: 5px;
+}
+
+#you-won {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    z-index: 1000;
+}
+
+#you-won p {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#uwu-gif {
+    width: 200px;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
